@@ -17,10 +17,12 @@
             <img src="svg/noemi-logo.svg" class="menu_logo" alt="">
           </a>
         </div>
+        <div class="button_burger">
+           <button class="menu__button">
+           <span class="hidden_row_button"></span>
+           </button>
+        </div>
         <nav class="menu_list">
-          <button class="menu__button">
-            <span class="hidden_row_button"></span>
-          </button>
           <ul class="menu_list_item">
             <li class="menu_item">
               <a href="#" class="menu_link">
@@ -55,6 +57,8 @@
           </ul>
         </nav>
       </nav>
+    </div>
+    <div class="titel_main">
       <h1 class="titel">
         блог о творчестве, спорте,
         и образе жизни
@@ -343,10 +347,9 @@
                   <span class="hidden_row">поле поиска</span>
                   <input type="text" class="field_search" placeholder="Найти..." />
                 </label>
-                <label class="form_group">
-                  <span class="hidden_row">кнопка поиска</span>
-                  <button type="search" class="button_search"></button>
-                </label>
+                <button type="search" class="button_search">
+                   <span class="hidden_row">кнопка поиска</span>
+                </button>
               </form>
             </div>
           </section>
@@ -361,7 +364,6 @@
                   <input type="email" class="field" placeholder="Ваш email-адрес" required />
                 </label>
                 <label class="form_group">
-                  <span class="hidden_row">подписаться</span>
                   <button type="submit" class="field_sign">подписаться</button>
                 </label>
               </form>
@@ -431,12 +433,12 @@
                   <span class="number">8</span>
                 </li>
               </ul>
-
             </div>
           </section>
         </div>
       </aside>
     </div>
+  </div>
     <h2 class="trend">
         НАШИ ИЗДЕЛИЯ
     </h2>
@@ -462,9 +464,11 @@
               <div class="value_prod_throught">1000₽</div>
               <div class="value_prod">800₽</div>
             </div>
-            <form class="shop">
-              <button type="submit" class="product_sign">В МАГАЗИН</button>
-            </form>
+            <div class="shop">
+              <a href="#" class="shop_link">
+                <button type="submit" class="product_sign">В МАГАЗИН</button>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -488,9 +492,11 @@
             <div class="value">
               <div class="value_prod">3500₽</div>
             </div>
-            <form class="shop">
+            <div class="shop">
+              <a href="#" class="shop_link">
                 <button type="submit" class="product_sign">В МАГАЗИН</button>
-            </form>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -515,14 +521,16 @@
               <div class="value_prod_throught">500₽</div>
               <div class="value_prod">400₽</div>
             </div>
-            <form class="shop">
-              <button type="submit" class="product_sign">В МАГАЗИН</button>
-            </form>
+            <div class="shop">
+              <a href="#" class="shop_link">
+                <button type="submit" class="product_sign">В МАГАЗИН</button>
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  
     <footer class="footer">
       <div class="socials">
         <address class="social_list_item">
@@ -566,11 +574,11 @@
       <div class="popup">
         <div class="popup_content">
           <div class="popup_close">
-            <img src="svg/form-x.svg" class="popup_img" alt=""/>
+            <button type="submit" class="popup_button" placeholder="закрыть"></button>
           </div>
-          <div class="popup_head">
+          <h2 class="popup_head">
             ВАШ ФИДБЕК
-          </div>
+          </h2>
           <form action="#" class="popup_form">
             <label class="popup_field">
               <span class="popup_text">Как часто вы заходите на сайт?
@@ -605,8 +613,6 @@
       </div>
   </div>
     
-  
-
 </body>
 
 </html>
